@@ -76,27 +76,66 @@ section h3 {
 
 .participants-section {
   margin-top: 15px;
-  padding: 12px;
-  border-radius: 5px;
+  padding: 14px;
+  border-radius: 10px;
   background-color: #eef3ff;
   border: 1px solid #d1d9f2;
 }
 
 .participants-section p {
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #1a237e;
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
-  padding-left: 18px;
-  color: #444;
+  padding: 0;
 }
 
 .participants-list li {
-  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d9e2ff;
+}
+
+.participant-name {
+  color: #444;
+  font-size: 0.98rem;
+  word-break: break-word;
+}
+
+.participant-delete {
+  min-width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 999px;
+  background-color: #ffdde0;
+  color: #b71c1c;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.participant-delete:hover {
+  background-color: #f8c1c6;
+  transform: scale(1.05);
+}
+
+.no-participants {
+  color: #556;
+  font-style: italic;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f5f7ff;
 }
 
 .form-group {
